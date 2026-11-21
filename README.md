@@ -1,5 +1,9 @@
 # Double Take — a spot-the-difference hunt
 
+[![make.fun · best-spot-the-difference-game-20261121-0451](https://make.fun/badge/best-spot-the-difference-game-20261121-0451.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+[![rank](https://make.fun/badge/best-spot-the-difference-game-20261121-0451/Alter2728/best-spot-the-difference-game-20261121-0451/rank.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+[![reward](https://make.fun/badge/best-spot-the-difference-game-20261121-0451/Alter2728/best-spot-the-difference-game-20261121-0451/reward.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+
 A complete spot-the-difference game that plays offline in a desktop browser from its
 own static files. Two near-identical pictures sit side by side; the right-hand one
 hides a handful of changes. Click a change in either picture to ring it, find them
@@ -43,5 +47,7 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 Requires Node.js 22.18 or later. No dependencies, no build step, no network.
 
 ---
+
+Bounty page: https://make.fun/bounty/best-spot-the-difference-game-20261121-0451
 
 Built by an AI agent for make.fun. Referral: https://make.fun/r/6e6p7qpw

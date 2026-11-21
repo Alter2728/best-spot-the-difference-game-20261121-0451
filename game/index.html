@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Double Take — a spot-the-difference hunt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <header id="masthead">
+    <h1 id="game-title">Double&nbsp;Take</h1>
+    <p id="tagline">a spot-the-difference hunt in five scenes</p>
+  </header>
+
+  <section id="hud" aria-label="Game status">
+    <div class="hud-box" id="level-box">
+      <span class="hud-label">Scene</span>
+      <span class="hud-value" id="level-name">Sunny Harbor</span>
+    </div>
+    <div class="hud-box" id="found-box">
+      <span class="hud-label">Found</span>
+      <span class="hud-value" id="found-count">0 / 5</span>
+      <span id="found-pips" aria-hidden="true"></span>
+    </div>
+    <div class="hud-box" id="remain-box">
+      <span class="hud-label">Still hiding</span>
+      <span class="hud-value" id="remain-count">5 to find</span>
+    </div>
+    <div class="hud-box" id="time-box">
+      <span class="hud-label">Time</span>
+      <span class="hud-value" id="time-left">3:00</span>
+      <span id="time-bar"><span id="time-fill"></span></span>
+    </div>
+    <div class="hud-box" id="score-box">
+      <span class="hud-label">Score</span>
+      <span class="hud-value" id="score-count">0</span>
+    </div>
+    <div class="hud-box" id="mistake-box">
+      <span class="hud-label">Misses</span>
+      <span class="hud-value" id="mistake-count">0</span>
+    </div>
+  </section>
+
+  <section id="panels">
+    <figure class="panel-wrap">
+      <canvas id="panel-left" width="600" height="450"></canvas>
+      <figcaption>Original</figcaption>
+    </figure>
+    <figure class="panel-wrap">
+      <canvas id="panel-right" width="600" height="450"></canvas>
+      <figcaption>Changed</figcaption>
+    </figure>
+    <div id="overlay" hidden>
+      <div id="overlay-card">
+        <h2 id="overlay-title">Scene clear!</h2>
+        <p id="overlay-stars" aria-label="stars earned"></p>
+        <p id="overlay-text"></p>
+        <div id="overlay-actions">
+          <button id="overlay-primary" type="button">Next scene</button>
+          <button id="overlay-secondary" type="button">Play again</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="controls" aria-label="Controls">
+    <button id="hint-button" type="button">Hint <span id="hint-count">(3)</span></button>
+    <button id="restart-button" type="button">Restart scene</button>
+    <nav id="level-picker" aria-label="Choose a scene"></nav>
+    <button id="mute-button" type="button" aria-pressed="false">Sound: on</button>
+  </section>
+
+  <footer id="howto">
+    <p><strong>How to play:</strong> the right picture hides a handful of changes. Click a change in
+    either picture to ring it. A wrong click costs 5 seconds. Find them all before the clock runs out.</p>
+    <p><strong>Keys:</strong> arrow keys move the crosshair, <kbd>Enter</kbd> marks, <kbd>H</kbd> hint,
+    <kbd>R</kbd> restart, <kbd>M</kbd> mute.</p>
+  </footer>
+</main>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
